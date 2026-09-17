@@ -11,7 +11,7 @@ export default function Hero() {
           alt="Students engaged in classroom learning"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-red-950/88 via-red-900/72 to-red-900/48" />
+        <div className="absolute inset-0 bg-gradient-to-r from-red-950/85 via-red-900/75 to-red-900/65" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">

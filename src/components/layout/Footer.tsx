@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail } from "lucide-react";
-import { NAV_ITEMS, SCHOOL } from "@/lib/data";
-import schoolLogo from "@/pages/264108_63972c627fc740a08be69564fcd03f79~mv2.avif";
+import { NAV_ITEMS, SCHOOL, SCHOOL_LOGO } from "@/lib/data";
 
 export default function Footer() {
   return (
@@ -12,7 +11,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <div className="flex items-center justify-center w-11 h-11 rounded-lg overflow-hidden bg-white">
                 <img
-                  src={schoolLogo}
+                  src={SCHOOL_LOGO}
                   alt="ABCMSTS logo"
                   className="w-full h-full object-contain"
                 />

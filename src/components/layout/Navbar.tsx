@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Heart } from "lucide-react";
-import { NAV_ITEMS, SCHOOL } from "@/lib/data";
-import schoolLogo from "@/pages/264108_63972c627fc740a08be69564fcd03f79~mv2.avif";
+import { NAV_ITEMS, SCHOOL, SCHOOL_LOGO } from "@/lib/data";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +31,7 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-3 group">
             <div className="flex items-center justify-center w-11 h-11 rounded-lg overflow-hidden bg-white shadow-sm">
               <img
-                src={schoolLogo}
+                src={SCHOOL_LOGO}
                 alt="ABCMSTS logo"
                 className="w-full h-full object-contain"
               />
@@ -81,6 +80,12 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3">
             <Link
+              to="/portal"
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 bg-white text-red-900 rounded-md text-sm font-semibold hover:bg-red-50 transition-all shadow-sm hover:shadow-md"
+            >
+              E-Portal
+            </Link>
+            <Link
               to="/donate"
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-white text-red-900 rounded-md text-sm font-semibold hover:bg-white transition-all shadow-sm hover:shadow-md"
             >
@@ -122,6 +127,12 @@ export default function Navbar() {
               </Link>
             );
           })}
+          <Link
+            to="/portal"
+            className="flex items-center gap-2 px-4 py-3 mt-2 bg-red-900 text-white rounded-md text-base font-semibold"
+          >
+            E-Portal
+          </Link>
           <Link
             to="/donate"
             className="flex items-center gap-2 px-4 py-3 mt-2 bg-white text-red-900 rounded-md text-base font-semibold"

@@ -11,6 +11,7 @@ import Events from "@/pages/Events";
 import Contact from "@/pages/Contact";
 import Donate from "@/pages/Donate";
 import NotFound from "@/pages/NotFound";
+import PortalApp from "@/pages/portal/PortalApp";
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
-          <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="/portal/*" element={<PortalApp />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
